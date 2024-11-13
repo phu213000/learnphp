@@ -69,30 +69,20 @@
 // echo $cars[3][0]. "In stock :".$cars[3][1].", sold :".$cars[3][2].".<br>";
 
 
+// Hiển thị địa chỉ IP của client
+echo "Địa chỉ IP của bạn là: " . $_SERVER['REMOTE_ADDR'] . "<br>";
+
+// Hiển thị phương thức yêu cầu HTTP
+echo "Phương thức yêu cầu HTTP: " . $_SERVER['REQUEST_METHOD'] . "<br>";
+
+// Hiển thị tên server
+echo "Tên server: " . $_SERVER['SERVER_NAME'] . "<br>";
+
+// Hiển thị tên file hiện tại
+echo "Tên file đang chạy: " . $_SERVER['PHP_SELF'] . "<br>";
 ?>
 
 </body>
 </html> -->
-<!DOCTYPE html>
-<html>
-<body>
 
-<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-  Name: <input type="text" name="fname">
-  <input type="submit">
-</form>
 
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // collect value of input field
-    $name = htmlspecialchars($_REQUEST['fname']);
-    if (empty($name)) {
-        echo "Name is empty";
-    } else {
-        echo $name;
-    }
-}
-?>
-
-</body>
-</html>
