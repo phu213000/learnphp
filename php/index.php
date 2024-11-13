@@ -21,6 +21,8 @@ $x = "John";
 echo 'Hello '.$x.'<br>';
 
 echo strlen($x);
+echo str_word_count("Hello world!");
+echo strpos("Hello world!", "world");
 
 ?>
 
