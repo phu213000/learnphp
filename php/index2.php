@@ -56,7 +56,7 @@
 ?>
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <script>
 function myfunction() {
@@ -76,4 +76,20 @@ function myfunction() {
 <h1 id="demo"></h1>
 
 </body>
-</html>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic PHP </title>
+</head>
+<body>
+  <?php
+  // $str = "Visit W3School";
+  // $pattern = "/w3school/i";
+  // echo preg_match($pattern, $str);
+  ?>
+</body>
+</html> -->
